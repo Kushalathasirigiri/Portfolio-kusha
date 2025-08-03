@@ -1,0 +1,634 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'poppins' , sans-serif;
+
+}
+body
+{
+    color: #ededed;
+    background: #0c1f2b;
+
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #132446;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+}
+.navbar a:hover{
+    color: #0ef;
+}
+.home {
+    position: relative;
+    width: 100%;
+    justify-self: space-between;
+    height: 100vh;
+    background-color: #0c1f2b;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.home-content {
+    max-width: 600px;
+}
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideButton 1s ease forwards;
+    animation-delay: .7s;
+
+}
+.home-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+}
+.home-content h3 span {
+    color: #0ef;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+.home-content p {
+    font-size: 20px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+.tick img{
+    padding-left: 70%;
+    border-radius: 8px;
+
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+.about-img img{
+    padding-bottom: 20%;
+    padding-left: 20%;
+    max-width: 630px;
+    height: auto;
+    width: 700%;
+    border-radius: 8px;
+}
+.about-text h2{
+    font-size: 60px;
+}
+.about-text h2 span{
+    color: #0ef;
+}
+.about-text h4{
+    font-size: 29px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+
+}
+.about-text p{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+.sub-title {
+    font-size: 60px;
+    text-align: center;
+}
+.sub-title  span{
+    color: #0ef;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.education-section {
+  width: 100%;
+  padding: 60px 10%;
+  background: #0c1f2b;
+  text-align: center;
+}
+
+.sub-title {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.sub-title span {
+  color: #0ef;
+}
+
+.edu-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* Keep responsive layout on smaller screens */
+}
+
+.edu-box {
+  background: #132446;
+  border-left: 5px solid #0ef;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: slideTop 1s ease forwards;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.edu-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 15px #0ef;
+}
+
+.edu-degree {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0ef;
+  margin-bottom: 8px;
+}
+
+.edu-institute {
+  font-size: 15px;
+  color: #ddd;
+}
+
+.edu-details {
+  font-size: 14px;
+  color: #bbb;
+  margin-top: 5px;
+}
+
+@keyframes slideTop {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.container1{
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+}
+.heading1{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+.bar{
+    font-size: 23px;
+}
+.Technical-bars .bar {
+    margin: 40px 0;
+}
+
+
+.Technical-bars .bar:first-child{
+    margin-top: 0;
+}
+.Technical-bars .bar:last-child{
+    margin-bottom: 0;
+}
+.Technical-bars .bar .info{
+    margin-bottom: 5px;
+}
+.Technical-bars .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+
+}
+.Technical-bars .bar .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000000;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+.Technical-bars .bar .progress-line span{
+    height: 100%;
+    background-color: #0ef;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+
+}
+.progress-line.html span{
+    width: 90%;
+}
+.progress-line.css span{
+    width: 60%;
+}
+.progress-line.javascript span{
+    width: 85%;
+}
+.progress-line.python span{
+    width: 50%;
+}
+.progress-line.django span{
+    width: 75%;
+}
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+.progress-line.html span::after{
+    content: "90%";
+}
+.progress-line.css span::after{
+    content: "60%";
+}
+.progress-line.javascript span::after{
+    content: "85%";
+}
+.progress-line.python span::after{
+    content: "50%";
+}
+.progress-line.django span::after{
+    content: "75%";
+}
+.progress-line span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+
+.radial-bars {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+/* Individual Radial Bar Setup */
+.radial-bars .radial-bar {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* SVG Setup */
+.radial-bars .radial-bar svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 100%;
+    height: 100%;
+}
+
+/* Background Circle (Static) */
+.radial-bars .radial-bar .progress-bar {
+    stroke-width: 10;
+    stop-color: black;
+    fill: transparent;
+    stroke-dasharray: 502; /* Circumference of the circle */
+    stroke-dashoffset: 502; /* Initially not visible */
+    stroke-linecap: round;
+}
+
+/* Path (Progress) Circle */
+.path {
+    stroke-width: 10;
+    stroke: #0ef;
+    fill: transparent;
+    stroke-dasharray: 502; /* Circumference of the circle */
+    stroke-dashoffset: 502; /* Initially not visible */
+    stroke-linecap: round;
+    animation: animate-bar 2s ease-out forwards;
+}
+
+/* Animation for Circle Fill */
+@keyframes animate-bar {
+    100% {
+        stroke-dashoffset: 0; /* Fills the circle */
+    }
+}
+
+/* Unique Animations for Each Path (with different percentages) */
+.path-1 { animation: animate-path1 2s ease-out forwards; }
+.path-2 { animation: animate-path2 2s ease-out forwards; }
+.path-3 { animation: animate-path3 2s ease-out forwards; }
+.path-4 { animation: animate-path4 2s ease-out forwards; }
+
+/* Animation Delays Based on Percentage */
+@keyframes animate-path1 {
+    100% { stroke-dashoffset: 50; } /* 90% */
+}
+@keyframes animate-path2 {
+    100% { stroke-dashoffset: 175; } /* 65% */
+}
+@keyframes animate-path3 {
+    100% { stroke-dashoffset: 125; } /* 75% */
+}
+@keyframes animate-path4 {
+    100% { stroke-dashoffset: 75; } /* 85% */
+}
+
+/* Centering Percentage Text */
+.radial-bar .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    opacity: 0;
+    animation: showText 1s 1s forwards; /* Delay for smooth fade-in */
+}
+
+/* Text Below the Radial Progress */
+.radial-bar .text {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    opacity: 0;
+    animation: showText 1s 1s forwards; /* Fade-in animation */
+}
+
+/* Fade-in Animation for Text */
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+.certificates-section {
+  width: 100%;
+  padding: 60px 10%;
+  background: #0c1f2b;
+  text-align: center;
+  color: #ededed;
+}
+
+.cert-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.cert-box {
+  background: #132446;
+  border-left: 4px solid #0ef;
+  border-radius: 10px;
+  padding: 25px 20px;
+  width: 280px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 5px #0ef44e30;
+}
+
+.cert-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 15px #0ef;
+}
+
+.cert-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0ef;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.cert-provider {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.credly-link {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.credly-button {
+  background-color: #0ef;
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.credly-button:hover {
+  background-color: #00c9c9;
+  transform: scale(1.05);
+}
+.skills-section {
+  margin-bottom: 60px;
+}
+
+.certificates-section {
+  margin-top: 140px;
+  
+}
+.contact-section {
+  width: 100%;
+  padding: 60px 10%;
+  background: #0c1f2b;
+  text-align: center;
+  color: #ededed;
+}
+
+.sub-title {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.sub-title span {
+  color: #0ef;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-text {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+.contact-info {
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.contact-info p {
+  margin: 8px 0;
+}
+
+.contact-info i {
+  color: #0ef;
+  margin-right: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #0ef;
+  font-size: 28px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #00ffff;
+}
+
+
+
+
+
+
+@keyframes  slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes  slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes  slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes  slideButton {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
